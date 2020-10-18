@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoon's Area</title>
+    
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script type="text/javascript" src="./jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        // $(function(){
+        //     $('.tnb1').addClass('out');
+        //     $('.tnb1').hover(function(){
+        //         $(this).animate();
+        //     },function(){
+        //         $(this).removeClass('in');
+        //     });
+        //     $('.left_myimg').click(function(){
+        //         $(this).find('img').animate({scale:"+=0.2"},300);
+        //     },
+        //     function(){
+        //         $(this).find('img').animate({scale:"-=0.2"},300);
+        //     }
+        //     );
+        // });
+        $(function(){
+            $("li").css("color","red");
+            $(".img-thumbnail").scale("1.5");
+        });
+       
+    </script>
+    <style>
+    * {margin: 0; padding: 0;}
+    ul,li{list-style: none;}
+    #yjo{ width: 200px; height: 260px;}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="tnb">
+                <nav class="tnb_wrap">
+                    <ul>
+                        <li class="tnb1"><a href="">I</a></li>
+                        <li>소개</li>
+                        <li class="tnb2">II</li>
+                        <li>기술 및 스택</li>
+                        <li class="tnb3">III</li>
+                        <li>프로젝트</li>
+                        <li class="tnb4">IV</li>
+                        <li>연락망</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content1">
+                <div class="left_myimg"><img src="./img/KakaoTalk_20200814_113926559.jpg" alt="" class="img-thumbnail"
+                    id="yjo"
+                    >
+                </div>
+                <div class="right_txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </header>
+    </div>
+</body>
+</html>
