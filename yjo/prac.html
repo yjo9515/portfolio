@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+ 
+    <!-- JQuery 추가 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+    <script>
+        $(document).ready( function(){
+ 
+            //duration: ms값, or 키워드[ slow: 600ms, 기본: 400ms fast: 200ms ]
+            $('#show').click( function(){
+                $('img').show("slow");
+            });
+            $('#hide').click( function(){
+                $('img').hide(3000); // 3000ms
+            });
+            $('#toggle').click( function(){
+                $('img').toggle("fast"); // 200ms
+            });
+            $('#fadein').click( function(){
+                $('img').fadeIn(5000); //점점 보여진다.
+                alert('animation complete');
+            });
+            $('#fadeout').click( function(){
+                $('img').fadeOut(5000); //점점 투명해져서 안보인다.
+            });
+            $('#fadeto').click( function(){
+                $('img').fadeTo(2000, 0.5); //0.5까지만 투명해지도록
+            });
+ 
+            $('#slideup').click( function(){
+                $('img').slideUp("slow");
+            });
+            $('#slidedown').click( function(){
+                $('img').slideDown("slow");
+            });
+            $('#slideToggle').click( function(){
+                $('img').slideToggle("slow");
+            });
+            $('#all').click( function(){
+                $('img').show("slow").fadeOut('slow').slideDown('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+ 
+    <p>
+        <button id="show">show</button>
+        <button id="hide">hide</button>
+        <button id="toggle">toggle</button>
+        <button id="fadein">fadein</button>
+        <button id="fadeout">fadeout</button>
+        <button id="fadeto">fadeto</button>
+        <button id="slideup">slideup</button>
+        <button id="slidedown">slidedown</button>
+        <button id="slideToggle">slideToggle</button>
+        <button id="all">show+fade+slide</button>
+    </p>
+ 
+    <img src="./img/KakaoTalk_20200814_113926559.jpg" width="200">
+    
+</body>
+</html>
