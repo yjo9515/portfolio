@@ -8,8 +8,14 @@ body {
   flex-wrap: wrap;
   display: flex;
   font-family: "Roboto", sans-serif;
-
+  word-break: keep-all;
   background-color: rgba(8, 8, 8, 0.89);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
 
 .navbar {
@@ -74,7 +80,7 @@ body {
   background-position: center;
   min-height: 710px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    url('../image/back-con.jpg');
 }
 
 .area {
@@ -130,7 +136,8 @@ body {
   cursor: pointer;
   border: none;
 }
-.image{position: relative; overflow: hidden;}
+.image{position: relative; overflow: hidden; height: 400px;}
+
 .tv{
     position: relative;
     z-index: 2;
@@ -173,6 +180,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   text-align: left;
+  position: relative;
 }
 
 .container1 img {
@@ -186,9 +194,96 @@ body {
   max-width: 100%;
   height: 350px;
 }
-.image{
-    height: 400px;
+
+.bwrap{ width: 48%; height: 100%;
+    
 }
+.image2{     margin: -8% 0 -4% -15%;
+  min-height: 100px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+.story_ani_wrap{
+  position: absolute;
+  left: 44%;
+  bottom: 8%;
+  padding: 0.5em 0.75em;
+  -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin : 0 auto;
+    background: #000;
+  width: 60%;
+  min-width: 15em;
+  border: 2px solid rgba(255 , 255, 255, 0.25);
+    -webkit-box-shadow: 0 0 2em 0 #000;
+    -moz-box-shadow: 0 0 2em 0 #000;
+    box-shadow: 0 0 2em 0 #000;
+    -webkit-border-radius: .75em;
+    -moz-border-radius: .75em;
+    border-radius: .75em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.story_ani_txt {
+  flex-grow: 1;
+}
+.story_ani_wrap:after{
+  width: 3em;
+  height: 3em;
+  display: block;
+  background: url('../video/download-icon.gif') center no-repeat;
+  background-size: 100%;
+  content: '';
+}
+.story_ani_img{
+  margin: 0 1em 0 0;
+}
+.story_ani_img img{
+  height: 5em;
+}
+#st_txt1{
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+}
+#st_txt2{
+  color: #0071eb;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.wrap2{
+  min-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 .text {
   color: white;
   display: flex;
@@ -197,7 +292,10 @@ body {
   justify-content: flex-start;
   align-self: center;
   align-content: center;
+  
+  
 }
+#text1{width: 52%;}
 .text p {
   font-size: 1.5rem;
   margin-top: 5px;
@@ -511,6 +609,7 @@ h4 {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
   }
 
   .text h1 {
@@ -537,4 +636,12 @@ h4 {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .story_ani_wrap{
+    padding: .5em .75em;
+
+  }
+  .wrap2{
+    flex-flow: column;
+  }
+  
 }
