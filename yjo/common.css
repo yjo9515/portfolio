@@ -44,6 +44,7 @@
         .hd {
             clear: both;
             width: 100%;
-            background-color: white;
+            height: 80px;
+           
             z-index: 10000;
         }

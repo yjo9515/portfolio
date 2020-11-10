@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
     <title>Yoon's Area</title>
-    <meta name="title" content="yoon's portfoilo">
-    <meta http-equiv="Subject" content="윤준오의 포트폴리오">
-    <meta name="keywords" content="웹개발, html, css, javascript,사이트제작,백엔드,프론트엔드 ...">
-    <meta name="Description" content="웹개발자의 포트폴리오 사이트 제작을 중심으로한 직무와 그와 관련된 컨텐츠 제작과 사이트 개발의 전반적인 기능 업무와 개발 기술을 표현하였음.">
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./css/bootstrap-theme.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -50,6 +46,7 @@
     #yjo:hover{
         transform: scale(1.1);
     }
+   
     .tnb_wrap {width: 500px; height: 100px;}
     .tnb_wrap ul {margin: 0 auto;}
 
@@ -67,16 +64,22 @@
     .tnb3:hover ~ #sub3 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
     .tnb4:hover ~ #sub4 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
     
-    .content1 { position: relative; width: 100%; height: 500px; background-image: url('./img/back-gruond.jpg'); background-attachment: fixed; background-size: cover;}
+    .content1 { position: relative; width: 100%; height: 500px; background-image: url('./img/main_image.gif'); background-attachment: fixed; background-size: 100% 70%  }
     .left_myimg{position: absolute;}
-    .right_txt { position: relative; left: 400px;  width: 400px; height: 200px; font-size: 20px;}
+    .right_txt { position: relative; left: 400px;  width: 400px; height: 200px; font-size: 20px; color: aliceblue;}
    
+    .skill {text-align: center; font-size: 500%;}
+    .box4 {margin-right: 0%;}
+    .box_wrap {position: relative;}
+    .box_wrap div{ float: left; width: 24%; height: 20%; background-color: aliceblue; margin-right: 1%; margin-bottom: 15px;} 
+    
+    .box_wrap div img {width: 280px; height: 200px; }
     
 
     </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #D5DAD4;">
         <header class="hd">
             <div class="tnb">
                 <nav class="tnb_wrap">
@@ -89,7 +92,6 @@
                         <li class="sub" id="sub3"><a class="tnb_sub"  id="tnb_sub3" href="" >Project</a></li>
                         <li class="tnb4">IV</li>
                         <li class="sub" id="sub4"><a class="tnb_sub"  id="tnb_sub4" href="" >Contact</a></li>
-                        <li><a href="" style="width: 120px; height: 150px; display: block; background-color: blue;">헬로</a></li>
                     </ul>
                 </nav>
             </div>
@@ -105,36 +107,50 @@
                         <br>
                         <li>"지나간 고통은 쾌락이다"</li>
                         <br>
-                        <li>현재에 충실하여 더욱 발전할 수 있는 개발자가 되고싶습니다.</li>
+                        <li>현재에 충실하여 더욱 발전하는 개발자가 되고싶습니다.</li>
                         
                     </ul>
                 </div>
             </div>
             <div class="content2">
+                <h3 class="skill">Skill</h3>
+                <div class="box_wrap">
                 <div class="box1">
-                    <img src="" alt="">
-                    <div></div>
+                    <img src="./img/html+css.png" alt="html+css">
+                    <div class="charge">
+                        <img src="./img/battery.png" alt="">
+                    </div>
                 </div>
+                
                 <div class="box2">
-                    <img src="" alt="">
+                    <img src="./img/javascript.png" alt="js">
                     <div></div>
                 </div>
                 <div class="box3">
-                    <img src="" alt="">
+                    <img src="./img/jquery.png" alt="jquery">
                     <div></div>
                 </div>
                 <div class="box4">
-                    <img src="" alt="">
+                    <img src="./img/java.png" alt="java">
                     <div></div>
                 </div>
                 <div class="box5">
-                    <img src="" alt="">
+                    <img src="./img/jsp.png" alt="jsp">
                     <div></div>
                 </div>
                 <div class="box6">
-                    <img src="" alt="">
+                    <img src="./img/spring.png" alt="spring">
                     <div></div>
                 </div>
+                <div class="box7">
+                    <img src="./img/git.png" alt="git">
+                    <div></div>
+                </div>
+                <div class="box8">
+                    <img src="./img/github.png" alt="github">
+                    <div></div>
+                </div>
+            </div>
             </div>
 
 
