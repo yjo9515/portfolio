@@ -36,47 +36,74 @@
             $('#tnb_sub4').css('display','none'); 
         });
         
-    });
-      
+        $('.tnb1').click(function(){
+            var positon = $('#content1').offset();
+            $('html, body').animate({scrollTop : positon.top}, 1000);
+        });
+        $('.tnb2').click(function(){
+            var positon = $('#content2').offset();
+            $('html, body').animate({ scrollTop : positon.top}, 1000);
+        });
+        $(".tnb3").click(function(){
+            var positon = $('#content3').offset();
+            $('html, body').stop().animate({scrollTop:positon.top},1000);
+        });
+        $('.tnb4').click(function(){
+            var positon = $('#content4').offset();
+            $('html, body').stop().animate({scrollTop:positon.top},1000);
+        });
+        $('.box1, #si1').hover(function(){
+            $('#b1, #p1, .b_bar li, .b_bar').css('display','block').queue(function(){ $('#b1, #p1, .b_bar li, .b_bar' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b1, #p1, .b_bar li, .b_bar').css('display', 'none');
+            }); 
+        });
+        
+     
+      window.onload = function () {
+            var elm = ".box";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                     
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+        }
        
     </script>
-    <style>
-
-    #yjo{ width: 300px; height: 400px;}
-    #yjo:hover{
-        transform: scale(1.1);
-    }
-   
-    .tnb_wrap {width: 500px; height: 100px;}
-    .tnb_wrap ul {margin: 0 auto;}
-
-    .tnb_wrap ul li a {text-align: center; margin: auto;}
-    .sub {width: 0%;transition: all ease 2s 0s ;}
-    
-    .tnb_sub{display: none;}
-    .tnb1,.tnb2,.tnb3,.tnb4 {
-        width: 60px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;
-        
-        }
-    
-    .tnb1:hover ~ #sub1 {display: block; width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
-    .tnb2:hover ~ #sub2 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
-    .tnb3:hover ~ #sub3 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
-    .tnb4:hover ~ #sub4 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
-    
-    .content1 { position: relative; width: 100%; height: 500px; background-image: url('./img/main_image.gif'); background-attachment: fixed; background-size: 100% 70%  }
-    .left_myimg{position: absolute;}
-    .right_txt { position: relative; left: 400px;  width: 400px; height: 200px; font-size: 20px; color: aliceblue;}
-   
-    .skill {text-align: center; font-size: 500%;}
-    .box4 {margin-right: 0%;}
-    .box_wrap {position: relative;}
-    .box_wrap div{ float: left; width: 24%; height: 20%; background-color: aliceblue; margin-right: 1%; margin-bottom: 15px;} 
-    
-    .box_wrap div img {width: 280px; height: 200px; }
-    
-
-    </style>
 </head>
 <body>
     <div class="container-fluid" style="background-color: #D5DAD4;">
@@ -96,7 +123,7 @@
                 </nav>
             </div>
             </header>
-            <div class="content1">
+            <div class="box" id="content1">
                 <div class="left_myimg"><img src="./img/KakaoTalk_20200814_113926559.jpg" alt="" class="img-thumbnail"
                     id="yjo"
                     >
@@ -112,42 +139,46 @@
                     </ul>
                 </div>
             </div>
-            <div class="content2">
+            <div class="box" id="content2">
                 <h3 class="skill">Skill</h3>
                 <div class="box_wrap">
                 <div class="box1">
-                    <img src="./img/html+css.png" alt="html+css">
-                    <div class="charge">
-                        <img src="./img/battery.png" alt="">
-                    </div>
+                    <img class="skill_img" id="si1" src="./img/html+css.png" alt="html+css">
+                    <div class="s_warp" >
+                    <img src="./img/battery.png" id="b1" alt="">
+                    <ul class="b_bar">
+                        <li><span class="b_txt">80%</span></li>
+                    </ul>
+                    
+                    </div>  
                 </div>
                 
                 <div class="box2">
-                    <img src="./img/javascript.png" alt="js">
+                    <img class="skill_img" src="./img/javascript.png" alt="js">
                     <div></div>
                 </div>
                 <div class="box3">
-                    <img src="./img/jquery.png" alt="jquery">
+                    <img class="skill_img" src="./img/jquery.png" alt="jquery">
                     <div></div>
                 </div>
                 <div class="box4">
-                    <img src="./img/java.png" alt="java">
+                    <img class="skill_img" src="./img/java.png" alt="java">
                     <div></div>
                 </div>
                 <div class="box5">
-                    <img src="./img/jsp.png" alt="jsp">
+                    <img class="skill_img" src="./img/jsp.png" alt="jsp">
                     <div></div>
                 </div>
                 <div class="box6">
-                    <img src="./img/spring.png" alt="spring">
+                    <img class="skill_img" src="./img/spring.png" alt="spring">
                     <div></div>
                 </div>
                 <div class="box7">
-                    <img src="./img/git.png" alt="git">
+                    <img class="skill_img" src="./img/git.png" alt="git">
                     <div></div>
                 </div>
                 <div class="box8">
-                    <img src="./img/github.png" alt="github">
+                    <img class="skill_img" src="./img/github.png" alt="github">
                     <div></div>
                 </div>
             </div>

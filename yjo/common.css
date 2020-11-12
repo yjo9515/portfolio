@@ -40,11 +40,120 @@
         
         /* 공통 스타일 */
        
-        
+        .container-fluid{
+            width: 100%; clear:both; position:relative; overflow:hidden;
+        }
+
+
+
         .hd {
             clear: both;
             width: 100%;
             height: 80px;
-           
+           position: fixed;
             z-index: 10000;
         }
+
+        #yjo{ width: 300px; height: 400px;}
+        #yjo:hover{
+            transform: scale(1.1);
+        }
+        
+        .tnb_wrap {width: 500px; height: 100px;}
+        .tnb_wrap ul {margin: 0 auto;}
+    
+        .tnb_wrap ul li a {text-align: center; margin: auto;}
+        .sub {width: 0%;transition: all ease 2s 0s ;}
+        
+        .tnb_sub{display: none;}
+        .tnb1,.tnb2,.tnb3,.tnb4 {
+            width: 60px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;
+            cursor: pointer;
+            }
+        
+        .tnb1:hover ~ #sub1 {display: block; width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
+        .tnb2:hover ~ #sub2 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
+        .tnb3:hover ~ #sub3 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
+        .tnb4:hover ~ #sub4 {display: block;width: 120px; height: 40px; background-color: aqua; margin-top: 10px; float: left; margin-right: 5px;}
+        
+        #content1 { position: relative; width: 100%; height: 500px; background-image: url('./img/main_image.gif'); background-attachment: fixed; background-size: 100% 70%; }
+        .left_myimg{position: absolute; left: 10%; top: 12%;}
+        .right_txt { position: relative; top: 12%; left: 40%;  width: 400px; height: 200px; font-size: 20px; color: aliceblue;}
+       
+        .skill {text-align: center; font-size: 500%;}
+        .box4 {margin-right: 0%;}
+        .box_wrap {position: relative;}
+        .box_wrap div{ float: left; width: 24%; height: 20%; background-color: aliceblue; margin-right: 1%; margin-bottom: 15px;} 
+        .skill_img {width: 300px; height: 200px;}
+       #p1{width: 100%; height: 50px;}
+       #content2{position: relative; width: 100%; height: 800px;
+       }
+       #b1 { width: 300px; height: 300px; position: absolute; z-index: 2;} 
+     
+       .b_txt{     animation-name: pull;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull 2s ease-out;
+        -webkit-animation: pull 2s ease-out;
+        
+    }
+       .b_bar{position: absolute; z-index: 0;
+        padding: 0;
+        list-style: none;
+        width: 300px;}
+        .b_bar li {
+            width: 300px; height: 150px; background-color: greenyellow;
+        -moz-animation: pull 2s ;
+        -webkit-animation: pull 2s ;
+        }  
+        @keyframes pull {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 100%;
+                
+            }
+           }
+        .fadein{
+            animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+        }
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-moz-keyframes fadein { /* Firefox */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-webkit-keyframes fadein { /* Safari and Chrome */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-o-keyframes fadein { /* Opera */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        #b1, #p1, .b_bar li, .b_bar {display: none;}
+      
+        
