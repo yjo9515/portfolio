@@ -53,9 +53,9 @@
             $('html, body').stop().animate({scrollTop:positon.top},1000);
         });
         $('.box1, #si1').hover(function(){
-            $('#b1, #p1, .b_bar li, .b_bar').css('display','block').queue(function(){ $('#b1, #p1, .b_bar li, .b_bar' ).addClass('fadein');});
+            $('#b1, #p1, .b_bar li, .b_bar, #s_wrap').css('display','block').queue(function(){ $('#b1, #p1, .b_bar li, .b_bar, #s_wrap' ).addClass('fadein');});
         }).mouseout(function(){
-            $('#b1, #p1, .b_bar li, .b_bar').css('display', 'none');
+            $('#b1, #p1, .b_bar li, .b_bar, #s_wrap').css('display', 'none');
             }); 
         });
         
@@ -144,7 +144,7 @@
                 <div class="box_wrap">
                 <div class="box1">
                     <img class="skill_img" id="si1" src="./img/html+css.png" alt="html+css">
-                    <div class="s_warp" >
+                    <div id="s_wrap" >
                     <img src="./img/battery.png" id="b1" alt="">
                     <ul class="b_bar">
                         <li><span class="b_txt">80%</span></li>
