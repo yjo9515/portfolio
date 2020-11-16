@@ -91,9 +91,47 @@
             $('#b8, #s_wrap8').css('display','block').queue(function(){ $('#b8, #s_wrap8' ).addClass('fadein');});
         }).mouseout(function(){
             $('#b8, #s_wrap8').css('display', 'none');
-        });   
+        });        
+    });
+    $(function(){
+        var img;
+        var img_count;
+        var img_position = 1;
+        var deg = 0;
+        var deg2 = -30;
 
-        
+        img = $('.img_wrap img');
+        img_count = img.length;
+        $('.btn2').click(function(){
+            if(1<img_position){
+                $('.img_wrap').animate({left : '+=380'},1000);
+                img_position--;
+                deg2 -= 30;
+                deg = 0;
+                $('.btn1').css({'transform' : 'rotate('+deg+'deg)'});
+                $('.btn2').css({'transform' : 'rotate('+deg2+'deg)'});
+                
+            }
+                
+            
+            
+        } );
+        $('.btn1').click(function(){
+            if(img_count>img_position){
+            $('.img_wrap').animate({left : '-=380'},1000);
+            img_position++;
+            deg += 30;
+            deg2 = 0;
+                $('.btn2').css({'transform' : 'rotate('+deg2+'deg)'});
+                $('.btn1').css({'transform' : 'rotate('+deg+'deg)'});
+                
+            }
+
+            
+        } );
+       
+
+
     });
         
      
@@ -265,11 +303,25 @@
             <div class="box" id="content3">
                 <h3 class="skill">Project</h3>
                 <div class="pro_wrap">
-                    <div>
-                        <img src="./img/phonewave.png" alt="">
-                    </div>
-
+                <img class="micro" src="./img/phonemicrowave.png" alt="">
+                <div class="img_container">
+                <div class="img_wrap">
+                <img src="https://source.unsplash.com/random" style="float:left;"/>
+                <img src="https://source.unsplash.com/random" style="float:left;"/>
+                <img src="https://source.unsplash.com/random" style="float:left;"/>
                 </div>
+                
+                </div>
+                
+                <img class="btn1" src="./img/phonemicrowave-btn1.png" alt="">
+                <img class="btn2" src="./img/phonemicrowave-btn2.png" alt="">
+                <div class="txt_wrap"></div>
+            </div>
+
+            </div>
+            <div class="box" id="content4">
+                <h3 class="skill">Contact</h3>
+                
 
 
             </div>
