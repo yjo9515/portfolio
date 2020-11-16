@@ -53,11 +53,48 @@
             $('html, body').stop().animate({scrollTop:positon.top},1000);
         });
         $('.box1, #si1').hover(function(){
-            $('#b1, #p1, .b_bar li, .b_bar, #s_wrap').css('display','block').queue(function(){ $('#b1, #p1, .b_bar li, .b_bar, #s_wrap' ).addClass('fadein');});
+            $('#b1, #s_wrap').css('display','block').queue(function(){ $('#b1, #s_wrap' ).addClass('fadein');});
         }).mouseout(function(){
-            $('#b1, #p1, .b_bar li, .b_bar, #s_wrap').css('display', 'none');
+            $('#b1, #s_wrap').css('display', 'none');
             }); 
+        $('.box2, #si2').hover(function(){
+            $('#b2, #s_wrap2').css('display','block').queue(function(){ $('#b1, #s_wrap2' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b2, #s_wrap2').css('display', 'none');
+        }); 
+        $('.box3, #si3').hover(function(){
+            $('#b3, #s_wrap3').css('display','block').queue(function(){ $('#b3, #s_wrap3' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b3, #s_wrap3').css('display', 'none');
         });
+        $('.box4, #si4').hover(function(){
+            $('#b4, #s_wrap4').css('display','block').queue(function(){ $('#b4, #s_wrap4' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b4, #s_wrap4').css('display', 'none');
+        }); 
+        $('.box5, #si5').hover(function(){
+            $('#b5, #s_wrap5').css('display','block').queue(function(){ $('#b5, #s_wrap5' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b5, #s_wrap5').css('display', 'none');
+        });
+        $('.box6, #si6').hover(function(){
+            $('#b6, #s_wrap6').css('display','block').queue(function(){ $('#b6, #s_wrap6' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b6, #s_wrap6').css('display', 'none');
+        }); 
+        $('.box7, #si7').hover(function(){
+            $('#b7, #s_wrap7').css('display','block').queue(function(){ $('#b7, #s_wrap7' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b7, #s_wrap7').css('display', 'none');
+        }); 
+        $('.box8, #si8').hover(function(){
+            $('#b8, #s_wrap8').css('display','block').queue(function(){ $('#b8, #s_wrap8' ).addClass('fadein');});
+        }).mouseout(function(){
+            $('#b8, #s_wrap8').css('display', 'none');
+        });   
+
+        
+    });
         
      
       window.onload = function () {
@@ -154,34 +191,87 @@
                 </div>
                 
                 <div class="box2">
-                    <img class="skill_img" src="./img/javascript.png" alt="js">
-                    <div></div>
+                    <img class="skill_img" id="si2" src="./img/javascript.png" alt="js">
+                    <div id="s_wrap2" >
+                        <img src="./img/battery.png" id="b2" alt="">
+                        <ul class="b_bar2">
+                            <li><span class="b_txt2">40%</span></li>
+                        </ul>
+                        
+                        </div> 
                 </div>
                 <div class="box3">
-                    <img class="skill_img" src="./img/jquery.png" alt="jquery">
-                    <div></div>
+                    <img class="skill_img" id="si3" src="./img/jquery.png" alt="jquery">
+                    <div id="s_wrap3" >
+                        <img src="./img/battery.png" id="b3" alt="">
+                        <ul class="b_bar3">
+                            <li><span class="b_txt3">50%</span></li>
+                        </ul>
+                        
+                        </div>
                 </div>
                 <div class="box4">
-                    <img class="skill_img" src="./img/java.png" alt="java">
-                    <div></div>
+                    <img class="skill_img" id="si4" src="./img/java.png" alt="java">
+                    <div id="s_wrap4" >
+                        <img src="./img/battery.png" id="b4" alt="">
+                        <ul class="b_bar4">
+                            <li><span class="b_txt4">70%</span></li>
+                        </ul>
+                        
+                        </div>
                 </div>
                 <div class="box5">
-                    <img class="skill_img" src="./img/jsp.png" alt="jsp">
-                    <div></div>
+                    <img class="skill_img" id="si5" src="./img/jsp.png" alt="jsp">
+                    <div id="s_wrap5" >
+                        <img src="./img/battery.png" id="b5" alt="">
+                        <ul class="b_bar5">
+                            <li><span class="b_txt5">70%</span></li>
+                        </ul>
+                        
+                        </div>
                 </div>
                 <div class="box6">
-                    <img class="skill_img" src="./img/spring.png" alt="spring">
-                    <div></div>
+                    <img class="skill_img" id="si6" src="./img/spring.png" alt="spring">
+                    <div id="s_wrap6" >
+                        <img src="./img/battery.png" id="b6" alt="">
+                        <ul class="b_bar6">
+                            <li><span class="b_txt6">50%</span></li>
+                        </ul>
+                        
+                        </div>
                 </div>
                 <div class="box7">
-                    <img class="skill_img" src="./img/git.png" alt="git">
-                    <div></div>
+                    <img class="skill_img" id="si7" src="./img/git.png" alt="git">
+                    <div id="s_wrap7" >
+                        <img src="./img/battery.png" id="b7" alt="">
+                        <ul class="b_bar7">
+                            <li><span class="b_txt7">70%</span></li>
+                        </ul>
+                        
+                        </div>
                 </div>
                 <div class="box8">
-                    <img class="skill_img" src="./img/github.png" alt="github">
-                    <div></div>
+                    <img class="skill_img" id="si8" src="./img/github.png" alt="github">
+                    <div id="s_wrap8" >
+                        <img src="./img/battery.png" id="b8" alt="">
+                        <ul class="b_bar8">
+                            <li><span class="b_txt8">70%</span></li>
+                        </ul>
+                        
+                        </div>
                 </div>
             </div>
+            </div>
+            <div class="box" id="content3">
+                <h3 class="skill">Project</h3>
+                <div class="pro_wrap">
+                    <div>
+                        <img src="./img/phonewave.png" alt="">
+                    </div>
+
+                </div>
+
+
             </div>
 
 

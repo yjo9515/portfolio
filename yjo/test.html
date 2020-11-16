@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+ 
+     <!-- JQuery 추가 -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+     <script>
+         $(document).ready( function(){
+            $('#move').on('click', function(){
+            // **목표로 하는 css의 속성을 지정하면 자동으로 그 사이를 만들어주는
+                 $('img').animate( {left:'200px'} );
+            });
+            $('#moveBack').on('click', function(){
+           
+                 $('img').animate( {left:''}, 3000 ); //duration
+            });
+            $('#multiAni').on('click', function(){
+           
+                 $('img').animate( {left:'+=50px', opacity:'0.4', width:'+=50px', height:'-=50px'}, 3000 ); //duration
+            });
+            $('#sequential').on('click', function(){
+                 $('img').animate( {left:'+=30px'}, 1000 ); 
+                 $('img').animate( {opacity:'0.4'}, 1000 ); 
+                 $('img').animate( {width:'+=50px'}, 1000 ); 
+                 $('img').animate( {height:'-=50px'}, 1000 ); 
+            });
+            //리셋
+            $('#reset').on('click', function(){
+                $('img').animate( {left:'', opacity:'1.0', width:'200px', height:'200px'}, 3000 );
+             });
+ 
+            $('#stop').on('click', function(){
+                 $('img').stop();
+            });
+ 
+ 
+         });
+     </script>
+ 
+</head>
+<body>
+ 
+    <p>
+        <button id="move">move</button>
+        <button id="moveBack">moveBack</button>
+        <button id="multiAni">multiAni</button>
+        <button id="sequential">sequential</button>
+        <button id="reset">reset</button>
+        <button id="stop">stop</button>
+    </p>
+    <img src="./ms17.png" width="200" style="position: relative;">
+    
+</body>
+</html>

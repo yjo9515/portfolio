@@ -88,10 +88,11 @@
         } 
         .skill_img {width: 100%; height: 200px; object-fit: contain; }
        #p1{width: 100%; height: 50px;}
-       #content2{position: relative; width: 100%; height: 800px;
+       #content2{position: relative; width: 100%; height: 700px; font-size: 20px;
        }
-       #b1 { width: 300px; height: 200px; position: absolute; top: 10px; left: 85px; z-index: 2;} 
-     
+       #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8 { width: 300px; height: 200px; position: absolute; top: 10px; left: 85px; z-index: 2;} 
+       
+
        .b_txt{     animation-name: pull;
         animation-duration: 2s;
         animation-delay: 0.3s;
@@ -102,19 +103,130 @@
         left: 45%;
         top: 40%;
     }
-       .b_bar{position: absolute; z-index: 0;
-        top: 60px; left: 95px;
+    .b_txt2{     animation-name: pull2;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull2 2s ease-out;
+        -webkit-animation: pull2 2s ease-out;
+        
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+    .b_txt3{     animation-name: pull3;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull3 2s ease-out;
+        -webkit-animation: pull3 2s ease-out;
+        
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+    .b_txt4{     animation-name: pull4;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull4 2s ease-out;
+        -webkit-animation: pull4 2s ease-out;
+        
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+    .b_txt5{     animation-name: pull5;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull5 2s ease-out;
+        -webkit-animation: pull5 2s ease-out;
+        
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+    .b_txt6{     animation-name: pull6;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull6 2s ease-out;
+        -webkit-animation: pull6 2s ease-out;
+        
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+    .b_txt7{     animation-name: pull7;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull7 2s ease-out;
+        -webkit-animation: pull7 2s ease-out;
+        
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+    .b_txt8{     animation-name: pull8;
+        animation-duration: 2s;
+        animation-delay: 0.3s;
+        -moz-animation: pull8 2s ease-out;
+        -webkit-animation: pull8 2s ease-out;
+        
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+    .b_bar, .b_bar2, .b_bar3, .b_bar4, .b_bar5, .b_bar6, .b_bar7, .b_bar8{position: absolute; z-index: 0;
+        top: 60px; left: 102px;
         padding: 0;
         list-style: none;
         width: 250px;}
+                 
         .b_bar li {
             width: 250px; height: 100px; background-color: greenyellow;
         -moz-animation: pull 2s ;
         -webkit-animation: pull 2s ;
         -webkit-animation-fill-mode:both;
-
-
-        }  
+        } 
+        .b_bar2 li {
+            width: 250px; height: 100px; background-color: greenyellow;
+        -moz-animation: pull2 2s ;
+        -webkit-animation: pull2 2s ;
+        -webkit-animation-fill-mode:both;
+        }
+        .b_bar3 li {
+            width: 250px; height: 100px; background-color: greenyellow;
+        -moz-animation: pull3 2s ;
+        -webkit-animation: pull3 2s ;
+        -webkit-animation-fill-mode:both;
+        }
+        .b_bar4 li {
+            width: 250px; height: 100px; background-color: greenyellow;
+        -moz-animation: pull4 2s ;
+        -webkit-animation: pull4 2s ;
+        -webkit-animation-fill-mode:both;
+        }
+        .b_bar5 li {
+            width: 250px; height: 100px; background-color: greenyellow;
+        -moz-animation: pull5 2s ;
+        -webkit-animation: pull5 2s ;
+        -webkit-animation-fill-mode:both;
+        }
+        .b_bar6 li {
+            width: 250px; height: 100px; background-color: greenyellow;
+        -moz-animation: pull6 2s ;
+        -webkit-animation: pull6 2s ;
+        -webkit-animation-fill-mode:both;
+        }     
+        .b_bar7 li {
+            width: 250px; height: 100px; background-color: greenyellow;
+        -moz-animation: pull7 2s ;
+        -webkit-animation: pull7 2s ;
+        -webkit-animation-fill-mode:both;
+        } 
+        .b_bar8 li {
+            width: 250px; height: 100px; background-color: greenyellow;
+        -moz-animation: pull8 2s ;
+        -webkit-animation: pull8 2s ;
+        -webkit-animation-fill-mode:both;
+        } 
         @keyframes pull {
             from {
                 width: 0%;
@@ -122,6 +234,76 @@
             }
             to {
                 width: 80%;
+                
+            }
+           }
+           @keyframes pull2 {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 40%;
+                
+            }
+           }
+           @keyframes pull3 {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 50%;
+                
+            }
+           }
+           @keyframes pull4 {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 70%;
+                
+            }
+           }
+           @keyframes pull5 {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 70%;
+                
+            }
+           }
+           @keyframes pull6 {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 50%;
+                
+            }
+           }
+           @keyframes pull7 {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 70%;
+                
+            }
+           }
+           @keyframes pull8 {
+            from {
+                width: 0%;
+                
+            }
+            to {
+                width: 70%;
                 
             }
            }
@@ -163,16 +345,62 @@
                 opacity: 1;
             }
         }
-        #b1, #p1, .b_bar li, .b_bar, #s_wrap {display: none;}
-      .b_txt{
         
-        font-size: 20px;
-
-      }
+      
+    #s_wrap, #s_wrap2, #s_wrap3, #s_wrap4, #s_wrap5, #s_wrap6, #s_wrap7, #s_wrap8 {
+        display: none;
+    }
       #s_wrap{background-color: aliceblue;
     width: 24%; height: 230px;
     border: 5px black solid ;
     position: absolute;
     left: 0px;
     }
+
+    #s_wrap2{background-color: aliceblue;
+        width: 24%; height: 230px;
+        border: 5px black solid ;
+        position: absolute;
+        left: 25%;
+        }
+        #s_wrap3{background-color: aliceblue;
+            width: 24%; height: 230px;
+            border: 5px black solid ;
+            position: absolute;
+            left: 50%;
+            }
+            #s_wrap4{background-color: aliceblue;
+                width: 24%; height: 230px;
+                border: 5px black solid ;
+                position: absolute;
+                left: 75%;
+                }
+                #s_wrap5{background-color: aliceblue;
+                    width: 24%; height: 230px;
+                    border: 5px black solid ;
+                    position: absolute;
+                    left: 0%;
+                    }
+                    #s_wrap6{background-color: aliceblue;
+                        width: 24%; height: 230px;
+                        border: 5px black solid ;
+                        position: absolute;
+                        left: 25%;
+                        z-index: 3;
+                        }
+                        #s_wrap7{background-color: aliceblue;
+                            width: 24%; height: 230px;
+                            border: 5px black solid ;
+                            position: absolute;
+                            left: 50%;
+                            z-index: 3;
+                            }
+                            #s_wrap8{background-color: aliceblue;
+                                width: 24%; height: 230px;
+                                border: 5px black solid ;
+                                position: absolute;
+                                left: 75%;
+                                }
+    #content3{position: relative; z-index: 0; width: 100%; height: 800px;}
+            
         
