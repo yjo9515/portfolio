@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/bootstrap-theme.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=394789c7d00f528c44b2755ef88617ae"></script>
     <script>
     $(function(){
         $('.tnb1').hover(function(){
@@ -111,7 +112,12 @@
                 $('.btn1').css({'transform' : 'rotate('+deg+'deg)'});
                 $('.btn2').css({'transform' : 'rotate('+deg2+'deg)'});
                 $('.txt_wrap').animate({left : '+=380'},1000);
+                if(img_position<10){
+                    $('#nix_s4_'+(img_position+1)).removeClass('nix_active');
+                    // $('#nix_s4_1').removeAttr('id');
+                    $('#nix_s4_'+img_position).addClass('nix_active').removeClass('nix_s4_1');
                 
+                }
             }
                 
             
@@ -126,11 +132,20 @@
                 $('.btn2').css({'transform' : 'rotate('+deg2+'deg)'});
                 $('.btn1').css({'transform' : 'rotate('+deg+'deg)'});
                 $('.txt_wrap').animate({left : '-=380'},1000);
+                if(img_position<10){
+                    $('#nix_s4_'+img_position).addClass('nix_active');
+                    // $('#nix_s4_1').removeAttr('id');
+                    $('#nix_s4_1').removeClass('nix_s4_1');
+                    $('#nix_s4_'+(img_position-1)).removeClass('nix_active');
+
+                }
                 
+
             }
 
             
         } );
+        
        
 
 
@@ -180,6 +195,15 @@
             });
         }
        
+    </script>
+    <script>
+        var container = document.getElementById('kakao_map'),
+         options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level : 3
+        };
+        var map = new kakao.maps.Map(container, options);
+
     </script>
 </head>
 <body>
@@ -317,6 +341,56 @@
                 
                 <img class="btn1" src="./img/phonemicrowave-btn1.png" alt="">
                 <img class="btn2" src="./img/phonemicrowave-btn2.png" alt="">
+                <div class="nixwrap">
+                <div class="nixbg">
+                    <div id="nix_s1_0" class="nix">0</div>
+                    <div id="nix_s1_1" class="nix">1</div>
+                    <div id="nix_s1_2" class="nix">2</div>
+                    <div id="nix_s1_3" class="nix">3</div>
+                    <div id="nix_s1_4" class="nix">4</div>
+                    <div id="nix_s1_5" class="nix">5</div>
+                    <div id="nix_s1_6" class="nix">6</div>
+                    <div id="nix_s1_7" class="nix">7</div>
+                    <div id="nix_s1_8" class="nix">8</div>
+                    <div id="nix_s1_9" class="nix">9</div>
+                  </div>
+                  <div class="nixbg">
+                    <div id="nix_s2_0" class="nix">0</div>
+                    <div id="nix_s2_1" class="nix">1</div>
+                    <div id="nix_s2_2" class="nix">2</div>
+                    <div id="nix_s2_3" class="nix">3</div>
+                    <div id="nix_s2_4" class="nix">4</div>
+                    <div id="nix_s2_5" class="nix">5</div>
+                    <div id="nix_s2_6" class="nix">6</div>
+                    <div id="nix_s2_7" class="nix">7</div>
+                    <div id="nix_s2_8" class="nix">8</div>
+                    <div id="nix_s2_9" class="nix">9</div>
+                  </div>
+                  <div class="nixbg">
+                    <div id="nix_s3_0" class="nix">0</div>
+                    <div id="nix_s3_1" class="nix">1</div>
+                    <div id="nix_s3_2" class="nix">2</div>
+                    <div id="nix_s3_3" class="nix">3</div>
+                    <div id="nix_s3_4" class="nix">4</div>
+                    <div id="nix_s3_5" class="nix">5</div>
+                    <div id="nix_s3_6" class="nix">6</div>
+                    <div id="nix_s3_7" class="nix">7</div>
+                    <div id="nix_s3_8" class="nix">8</div>
+                    <div id="nix_s3_9" class="nix">9</div>
+                  </div>
+                  <div class="nixbg">
+                    <div id="nix_s4_0" class="nix">0</div>
+                    <div id="nix_s4_1" class="nix nix_s4_1">1</div>
+                    <div id="nix_s4_2" class="nix">2</div>
+                    <div id="nix_s4_3" class="nix">3</div>
+                    <div id="nix_s4_4" class="nix">4</div>
+                    <div id="nix_s4_5" class="nix">5</div>
+                    <div id="nix_s4_6" class="nix">6</div>
+                    <div id="nix_s4_7" class="nix">7</div>
+                    <div id="nix_s4_8" class="nix">8</div>
+                    <div id="nix_s4_9" class="nix">9</div>
+                  </div>
+                </div>
                 <div class="txt_container">
                  <div class="txt_wrap">
                      <ul>
@@ -350,7 +424,7 @@
             </div>
             <div id="content4">
                 <h3 class="skill">Contact</h3>
-                <div class="ft">
+                <div class="con_wrap">
                     <ul>
                         <li>Phone : 010-3202-2635</li>
                         <li>Email : yjo9515@naver.com</li>
@@ -362,6 +436,10 @@
 
 
 
+
+                </div>
+                
+                <div id="kakao_map">
 
                 </div>
                 
