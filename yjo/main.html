@@ -193,6 +193,19 @@
                     });
                 });
             });
+            
+$(window).resize(function(){
+    var winWidth = $(window).width();
+    var boxWidth = $('.micro').width();
+    if(winWidth <= 8000){
+        $('.img_container').height(boxWidth*0.4);
+        $('.img_wrap img').height(boxWidth*0.4);
+        $('.nixwrap').height(boxWidth*0.13);
+        
+    }
+});
+
+
         }
        
     </script>
@@ -330,8 +343,9 @@
                 </div>
                 
                 </div>
-                
+                <div class="btn1_wrap">
                 <img class="btn1" src="./img/phonemicrowave-btn1.png" alt="">
+                </div>  
                 <img class="btn2" src="./img/phonemicrowave-btn2.png" alt="">
                 <div class="nixwrap">
                 <div class="nixbg">
@@ -431,7 +445,7 @@
                         <div class="box_6">yjo9515@naver.com</div>
                     </div>
                     <div class="txt_box">
-                        <div class="box_7"><img src="./img/github_2.png" alt="" class="con_img"></div>
+                        <div class="box_7"><img src="./img/github_2.png" alt="" id="git_img"></div>
                         <div class="box_8">Github</div>
                         <div class="box_9"><a href="https://github.com/yjo9515">https://github.com/yjo9515</a></div>
                     </div>
@@ -444,9 +458,25 @@
                         
                     
                 </div>
-                <div id="map">
+                
+                    <div class="map_wrap">
+                        <!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:100%; height:500px; "></div>
 
-                </div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2757f385d519caf2169bc57f416aaeb5"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.569084, 126.988581), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+</script>
+                    </div>
+
+                
 
 
 
