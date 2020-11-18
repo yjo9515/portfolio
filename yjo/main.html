@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/bootstrap-theme.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=394789c7d00f528c44b2755ef88617ae"></script>
+    
     <script>
     $(function(){
         $('.tnb1').hover(function(){
@@ -196,15 +196,7 @@
         }
        
     </script>
-    <script>
-        var container = document.getElementById('kakao_map'),
-         options = {
-            center: new kakao.maps.LatLng(33.450701, 126.570667),
-            level : 3
-        };
-        var map = new kakao.maps.Map(container, options);
-
-    </script>
+    
 </head>
 <body>
     <div class="container-fluid" style="background-color: #D5DAD4;">
@@ -422,26 +414,45 @@
             </div>
 
             </div>
-            <div id="content4">
+            <div class="box" id="content4">
                 <h3 class="skill">Contact</h3>
                 <div class="con_wrap">
-                    <ul>
-                        <li>Phone : 010-3202-2635</li>
-                        <li>Email : yjo9515@naver.com</li>
-                        <li>Github : <a href="https://github.com/yjo9515">https://github.com/yjo9515</a></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="left_txt">
+                    <div class="txt_box">
+                        <div class="box_1"><img  id="phone"src="./img/phone.png" alt=""></div>
+                        <div class="box_2">Phone</div>
+                        <div class="box_3">010-3202-2635</div>
+
+
+                    </div>
+                    <div class="txt_box">
+                        <div class="box_4"><img src="./img/email.png" class="con_img"alt="" ></div>
+                        <div class="box_5">Email</div>
+                        <div class="box_6">yjo9515@naver.com</div>
+                    </div>
+                    <div class="txt_box">
+                        <div class="box_7"><img src="./img/github_2.png" alt="" class="con_img"></div>
+                        <div class="box_8">Github</div>
+                        <div class="box_9"><a href="https://github.com/yjo9515">https://github.com/yjo9515</a></div>
+                    </div>
+                    <div class="txt_box">
+                        <div class="box_10"><img src="./img/kakao.png" alt="" class="con_img"></div>
+                        <div class="box_11">KakaoTalk</div>
+                        <div class="box_12">yjo9515</div>
+
+                    </div>
+                        
+                    
+                </div>
+                <div id="map">
+
+                </div>
 
 
 
 
                 </div>
                 
-                <div id="kakao_map">
-
-                </div>
                 
 
 
