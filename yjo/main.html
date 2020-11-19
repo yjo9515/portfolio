@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.1, user-scalable=yes,initial-scale=0.4" />
     <title>Yoon's Area</title>
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./css/bootstrap-theme.css">
@@ -201,7 +201,9 @@ $(window).resize(function(){
         $('.img_container').height(boxWidth*0.4);
         $('.img_wrap img').height(boxWidth*0.4);
         $('.nixwrap').height(boxWidth*0.13);
-        
+        $('.btn1_wrap').height(boxWidth*0.05);
+        $('.btn2_wrap').height(boxWidth*0.065);
+        $('.txt_container').height(boxWidth*0.65);
     }
 });
 
@@ -345,8 +347,10 @@ $(window).resize(function(){
                 </div>
                 <div class="btn1_wrap">
                 <img class="btn1" src="./img/phonemicrowave-btn1.png" alt="">
-                </div>  
+                </div>
+                <div class="btn2_wrap">  
                 <img class="btn2" src="./img/phonemicrowave-btn2.png" alt="">
+                </div>
                 <div class="nixwrap">
                 <div class="nixbg">
                     <div id="nix_s1_0" class="nix">0</div>

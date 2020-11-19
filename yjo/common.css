@@ -55,7 +55,7 @@
             z-index: 10000;
         }
 
-        #yjo{ width: 300px; height: 400px;}
+        #yjo{ width: 100%; height: 100%;}
         #yjo:hover{
             transform: scale(1.1);
         }
@@ -87,9 +87,9 @@
         .tnb3:hover ~ #sub3 {display: block;width: 120px; height: 40px; background-color: #949495; margin-top: 10px; float: left; margin-right: 5px;}
         .tnb4:hover ~ #sub4 {display: block;width: 120px; height: 40px; background-color: #949495; margin-top: 10px; float: left; margin-right: 5px;}
         
-        #content1 { position: relative; width: 100%; height: 500px; background-image: url('./img/main_image.gif'); background-attachment: fixed; background-size: 100% 70%; }
-        .left_myimg{position: absolute; left: 10%; top: 12%;}
-        .right_txt { position: relative; top: 12%; left: 40%;  width: 400px; height: 200px; font-size: 20px; color: aliceblue;}
+        #content1 { position: relative; width: 100%; height: 23%; background-image: url('./img/main_image.gif'); background-attachment: fixed; background-size: 100% 70%; }
+        .left_myimg{position: absolute; left: 10%; top: 18%; width: 18%; height: auto;}
+        .right_txt { position: relative; top: 18%; left: 40%;  width: 60%; height: 200px; font-size: 20px; color: aliceblue;}
        
         .skill {text-align: center; font-size: 500%;}
         .box4 {margin-right: 0%;}
@@ -101,7 +101,7 @@
        #p1{width: 100%; height: 50px;}
        #content2{position: relative; width: 100%; height: 700px; font-size: 20px;
        }
-       #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8 { width: 300px; height: 200px; position: absolute; top: 10px; left: 85px; z-index: 2;} 
+       #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8 { width: 70%; height: 200px; position: absolute; transform: translate(25%,5%); z-index: 2;} 
        
 
        .b_txt{     animation-name: pull;
@@ -185,55 +185,55 @@
         top: 40%;
     }
     .b_bar, .b_bar2, .b_bar3, .b_bar4, .b_bar5, .b_bar6, .b_bar7, .b_bar8{position: absolute; z-index: 0;
-        top: 60px; left: 102px;
+        transform: translate(39%,60%);
         padding: 0;
         list-style: none;
-        width: 250px;}
+        width: 56%;}
                  
         .b_bar li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull 2s ;
         -webkit-animation: pull 2s ;
         -webkit-animation-fill-mode:both;
         } 
         .b_bar2 li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull2 2s ;
         -webkit-animation: pull2 2s ;
         -webkit-animation-fill-mode:both;
         }
         .b_bar3 li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull3 2s ;
         -webkit-animation: pull3 2s ;
         -webkit-animation-fill-mode:both;
         }
         .b_bar4 li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull4 2s ;
         -webkit-animation: pull4 2s ;
         -webkit-animation-fill-mode:both;
         }
         .b_bar5 li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull5 2s ;
         -webkit-animation: pull5 2s ;
         -webkit-animation-fill-mode:both;
         }
         .b_bar6 li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull6 2s ;
         -webkit-animation: pull6 2s ;
         -webkit-animation-fill-mode:both;
         }     
         .b_bar7 li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull7 2s ;
         -webkit-animation: pull7 2s ;
         -webkit-animation-fill-mode:both;
         } 
         .b_bar8 li {
-            width: 250px; height: 100px; background-color: greenyellow;
+            width: 20%; height: 100px; background-color: greenyellow;
         -moz-animation: pull8 2s ;
         -webkit-animation: pull8 2s ;
         -webkit-animation-fill-mode:both;
@@ -419,7 +419,7 @@
     .micro {position: absolute; width: 55%;transform:translate(5%,15%); border: 3px solid #fff; box-shadow: 0 0 16px rgb(221, 221, 221);}
     .img_container{overflow: hidden; width: 35%; height: 230px; position: relative; transform:translate(22%,87%) ;}
     .btn1_wrap{
-        transform: translate(565%,20%);
+        transform: translate(565%,130%);
         width: 8.5%;
         height: 8.5%;   
     }
@@ -428,12 +428,18 @@
         -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
     }
-    .btn2{position: absolute; left: 47%; top: 368px;  width: 95px; height: 93px; border-radius: 70%; border: 6px solid #fff;
+    .btn2{position: absolute;   width: 100%;  border-radius: 70%; border: 6px solid #fff;
     box-shadow: 0 0 16px rgb(221, 221, 221);
     cursor: pointer;
     -webkit-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
+    }
+    .btn2_wrap{
+        transform: translate(565%,280%);
+        width: 8.5%;
+        height: 8.5%; 
+
     }
     .btn1:hover{    -webkit-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
@@ -452,7 +458,7 @@
         width: 10%;
         height: 70px;
         float: left;
-        transform:translate(473%,-100%);
+        transform:translate(473%,-220%);
         background-color: #000000;
         
     }
@@ -502,24 +508,24 @@
     z-index: 10;
     }
     .txt_container{
-        position: relative; overflow: hidden; width: 400px; height: 412px; background-color: #fff;
-        top: -180px;
-        left: 60%;
+        position: relative; overflow: hidden; width: 30%; height: 400px; background-color: #fff;
+        transform: translate(210%,-60%);
         border: 3px solid #fff; box-shadow: 0 0 16px rgb(221, 221, 221);
     }
     .txt_wrap{
-        position: absolute; width: 1200px; height: 300px;
+        position: absolute; width: 400%; height: 300px;
         
     }
     .txt_wrap ul{
         float: left;
-        width: 400px;
+        width: 25%;
         height: 300px;
 
-        font-size: 25px;
+        font-size: 1.4vw;
     }
     .txt_wrap ul li {
-        padding-bottom: 30px;
+        padding-bottom: 15%;
+
     }
     
     #content4{width: 100%; height: 500px;}
@@ -557,4 +563,36 @@
         z-index: 300;
         top: 0px;
         left: 0px;
+    }
+    @media screen and (max-width : 1300px){
+        #yjo{
+            width: 100%;
+            height: 100%;
+        }
+        .left_myimg{
+            position: absolute;
+            transform: translate(-30%,-10%);
+            min-width: 12%;
+            height: auto;
+        }
+        .right_txt{
+            position: relative;
+            top: 12%;
+            left: 30%;
+            width: 40%;
+            height: 30%;
+            font-size: 20px;
+            color: aliceblue;
+            transform: translate(8%,30%);
+        }
+        .box_wrap{
+           
+        }
+        .box_wrap div{
+            
+        }
+        
+
+       
+
     }
