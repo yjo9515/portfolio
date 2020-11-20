@@ -745,6 +745,7 @@
         .tnb_wrap ul {
             width: 1300px;
             height: 100px;
+            float: left;
         }
         .tnb_wrap ul li{
             
@@ -792,6 +793,17 @@
             margin: auto;
             color: #000000;
             height: 100%;
+        }
+        .sub {
+            width: 0%;
+            transition: all ease 2s 0s;
+        }
+        .container-fluid {
+            width: 100%;
+            clear: both;
+            position: relative;
+            overflow: hidden;
+            height: 2600px;
         }
         
     
