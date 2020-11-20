@@ -568,6 +568,7 @@
         top: 0px;
         left: 0px;
     }
+    #map2{display: none;}
     @media screen and (max-width : 1300px) 
     {
         #content1{
@@ -702,12 +703,12 @@
     background-color: #000000;
         }
         .btn1_wrap{
-            transform: translate(565%,490%);
+            transform: translate(565%,270%);
     width: 8.5%;
     height: 8.5%;
         }
         .btn2_wrap{
-            transform: translate(565%,570%);
+            transform: translate(565%,320%);
     width: 8.5%;
     height: 8.5%;
         }
@@ -806,7 +807,8 @@
             overflow: hidden;
             height: 2600px;
         }
-        
+        #map2{display: block;}
+        #map{display: none;}
     
         
         
