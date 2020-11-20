@@ -421,7 +421,7 @@
     .micro {position: absolute; width: 55%;transform:translate(5%,15%); border: 3px solid #fff; box-shadow: 0 0 16px rgb(221, 221, 221);}
     .img_container{overflow: hidden; width: 35%; height: 230px; position: relative; transform:translate(22%,94%) ;}
     .btn1_wrap{
-        transform: translate(565%,130%);
+        transform: translate(565%,134%);
         width: 8.5%;
         height: 8.5%;   
     }
@@ -438,7 +438,7 @@
         transition: all 0.5s ease-in-out;
     }
     .btn2_wrap{
-        transform: translate(565%,280%);
+        transform: translate(565%,285%);
         width: 8.5%;
         height: 8.5%; 
 
@@ -702,12 +702,12 @@
     background-color: #000000;
         }
         .btn1_wrap{
-            transform: translate(565%,260%);
+            transform: translate(565%,490%);
     width: 8.5%;
     height: 8.5%;
         }
         .btn2_wrap{
-            transform: translate(565%,320%);
+            transform: translate(565%,570%);
     width: 8.5%;
     height: 8.5%;
         }
@@ -734,7 +734,7 @@
             border: 3px solid #fff;
             box-shadow: 0 0 16px rgb(221, 221, 221);
             width: 14%;
-            height: 60%;
+            height: 60px;
             background-color: #949495;
             margin-top: 10px;
             float: left;
@@ -744,18 +744,19 @@
         }
         .tnb_wrap ul {
             width: 1300px;
-            height: 100px;
+            height: 70px;
             float: left;
+            overflow: hidden;
         }
         .tnb_wrap ul li{
-            
+                
                 line-height: 50px;
             
         }
         .tnb1:hover ~ #sub1 {
             display: block;
             width: 14%;
-            height: 60%;
+            height: 60px;
             background-color: #949495;
             margin-top: 10px;
             float: left;
@@ -764,7 +765,7 @@
         .tnb2:hover ~ #sub2 {
             display: block;
             width: 14%;
-            height: 60%;
+            height: 60px;
             background-color: #949495;
             margin-top: 10px;
             float: left;
@@ -773,7 +774,7 @@
         .tnb3:hover ~ #sub3 {
             display: block;
             width: 14%;
-            height: 60%;
+            height: 60px;
             background-color: #949495;
             margin-top: 10px;
             float: left;
@@ -782,7 +783,7 @@
         .tnb4:hover ~ #sub4 {
             display: block;
             width: 14%;
-            height: 60%;
+            height: 60px;
             background-color: #949495;
             margin-top: 10px;
             float: left;
