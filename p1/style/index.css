@@ -233,7 +233,7 @@ img {
 .bwrap {
   width: 48%;
   height: 100%;
-
+  transform: translate(50%,20%);
 }
 
 .image2 {
@@ -247,7 +247,7 @@ img {
 
 .story_ani_wrap {
   position: absolute;
-  left: 44%;
+  left: 25%;
   bottom: 8%;
   padding: 0.5em 0.75em;
   -webkit-transform: translateX(-50%);
@@ -257,7 +257,7 @@ img {
   transform: translateX(-50%);
   margin: 0 auto;
   background: #000;
-  width: 60%;
+  width: 40%;
   min-width: 15em;
   border: 2px solid rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 0 2em 0 #000;
