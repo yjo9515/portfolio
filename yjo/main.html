@@ -53,6 +53,18 @@
             var positon = $('#content4').offset();
             $('html, body').stop().animate({scrollTop:positon.top},1000);
         });
+            
+                $('.coke, .coke img').click(function(){
+                    var positon = $('#content1').offset();
+        $('html, body').animate({        
+            scrollTop : positon.top 
+        }, 800);
+        return false;
+                });
+            
+    
+
+
         $('.box1, #si1').hover(function(){
             $('#b1, #s_wrap').css('display','block').queue(function(){ $('#b1, #s_wrap' ).addClass('fadein');});
         }).mouseout(function(){
@@ -191,6 +203,8 @@
                         duration: 800, complete: function () {
                         }
                     });
+                   
+            
                 });
             });
             
@@ -209,6 +223,8 @@ $(window).resize(function(){
 
 
         }
+        
+
        
     </script>
     
@@ -230,7 +246,9 @@ $(window).resize(function(){
                     </ul>
                 </nav>
             </div>
+            
             </header>
+            
             <div class="box" id="content1">
                 <div class="left_myimg"><img src="./img/KakaoTalk_20200814_113926559.jpg" alt="" class="img-thumbnail"
                     id="yjo"
@@ -246,6 +264,7 @@ $(window).resize(function(){
                         
                     </ul>
                 </div>
+                <div class="coke"><img src="./img/dr_pepper.png" alt=""></div>
             </div>
             <div class="box" id="content2">
                 <h3 class="skill">Skill</h3>
