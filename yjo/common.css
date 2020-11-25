@@ -597,7 +597,7 @@
         }
         .left_myimg{
             position: absolute;
-            transform: translate(-30%,-10%);
+            transform: translate(-30%,5%);
             width: 12%;
             height: 500px;
         }
