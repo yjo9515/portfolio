@@ -575,14 +575,15 @@
         width: 50%; height: 100%;
         position: relative;
         float: right;
-        top: -500px;
+        top: -400px;
     }
     #map{
         z-index: 300;
         top: 0px;
         left: 0px;
     }
-    #map2{display: none;}
+    
+
     @media screen and (max-width : 1300px) 
     {
         #content1{
@@ -821,8 +822,7 @@
             overflow: hidden;
             height: 2600px;
         }
-        #map2{display: block;}
-        #map{display: none;}
+       
     
         
         
