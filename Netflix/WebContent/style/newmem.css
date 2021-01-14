@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+       margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    word-break: keep-all;
+    background-color: rgba(8, 8, 8, 0.5);
+    position: relative;
+    background-image: url(../image/login-back.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    background-blend-mode: multiply;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    align-self: center;
+}
+.newmem {
+    display: flex;
+    flex-direction: column;
+    background: rgba(000, 000, 000, 0.75);
+    border-radius: 4px;
+    width: 900px;
+    height: 750px;
+    padding: 60px 68px 40px;
+    margin: 0 auto;
+
+}
+
+.newmem__group {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    
+}
+
+.newmem__group label {
+   font-size: 15px;
+    color: #fff;
+    width: 20%;
+    height: 30px;
+    margin-left: 80px;
+    display: block;
+    transform: translate(0,160%);
+
+}
+
+.newmem__group__input {
+    width: 50%;
+    position: relative;
+    z-index: 100;
+    background: #333;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    opacity: 1;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 50px;
+    padding: 12px 18px 0;
+}
+
+
+.newmem_title {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.newmem_not {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.newmem_not a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 7px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.buttons {
+    background-color: #e50914;
+    padding: 7px ;
+    color: white;
+    display: block;
+    flex-direction: row;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+    cursor: pointer;
+}

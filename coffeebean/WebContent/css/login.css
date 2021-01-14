@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.contents { clear: both; width: 1280px; height: 1000px; margin: 0 auto;}
+.txtbox { background: rgb(238, 238, 238); text-align: center; height: 240px; margin-top: 130px; margin-bottom: 50px;}
+.txtbox li {font-weight: 550; margin-top: 10px; font-size: 18px; }
+.txtbox li:first-child { padding-top: 30px;}
+.txtbox li:last-child { font-size: 14px;}
+.txtbox a { display: block; width: 140px; height: 45px; background-color: #f38200; text-align: center; color: white; font-weight: 500; line-height: 45px; margin: 0 auto; margin-top: 30px; margin-bottom: 30px;}
+.login_form { margin: 0 auto; width: 800px; text-align: center; margin-top: 100px; background: rgb(238, 238, 238); height: 300px; padding-top: 50px;}
+.login_form label { font-size: 18px; font-weight: 550;}
+.login_form label:first-child {color: #CF661A; }
+.login_form input { width: 300px; height: 30px; margin-left: 30px; text-align: center;margin-top: 15px;}
+.login_form input:last-child { border-radius: 15px; width: 450px; margin-top: 50px; height: 40px; background-color: #f38200; color: white; font-size: 16px; font-weight: 550;}
+.login_form input:last-child:hover {background-color: #CF661A;}
+.login_form a {display: block; width: 100px; margin-left: 200px; color: #f38200; height: 20px;margin-top: 5px; margin-bottom: 20px;}
+.login_form a:hover {color: #CF661A; border-bottom: 1px solid;}

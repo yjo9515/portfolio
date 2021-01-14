@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.contents { width: 1280px; height: 800px; margin: 0 auto;  margin-top: 200px;}
+.contents h1, h3 { margin: 0 auto; text-align: center; }
+.contents h1 {padding-top: 150px;}
+.bar {float: right; width: 50px; height: 50px; padding-top: 40px;}
+.contents ul {margin: 0 auto; text-align: center; width: 660px;height: 100px; } 
+.contents li { float: left; text-align: center; height: 130px; width: 130px; }
+.contents li span { text-align: center; display: block;}
+.btn_box {margin: 0 auto; text-align: center; margin-top: 150px;}
+.btn_box a {display: inline-block; width: 250px; height: 40px; line-height: 40px; color: black; background-color: #DDDDDD; border-radius: 20px; font-size: 16px; font-weight: 550;}
+.btn_box a:hover {background-color: #CF661A; color: white; font-size: 16px; font-weight: 550;}

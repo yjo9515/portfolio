@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    align-self: center;
+    background-image: url(../image/help_img.jpg);
+    background-size: cover;
+}
+
+.navbar li {
+    margin: 0 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.logo img {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.buttons {
+    background-color: #e50914;
+    padding: 7px 17px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-right: 120px;
+  }
+  .tit_wrap{
+      color: #fff;
+  }

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+    /* 공통부분 */
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; min-width: 1280px; }
+    li { list-style: none; }
+    a { text-decoration: none; }
+    #point_txt {color: #CF661A;}
+    
+    /* 헤드부분 /   wrap 포함.  */
+    .wrap { width: 100%; position:absolute;}
+    .hd {  width: 100%; height: 100px; position: fixed;}
+    .tnb { width: 100%; margin: 0 auto; height: 40px;background: rgb(238, 238, 238); }
+    .top_menu { width: 1280px; margin: 0 auto; height: 40px;}
+    .top_menu li { float:right;}
+    .top_menu li a {float: left; display: block; color: black; height: 40px; width: 93px; text-align: center; line-height: 40px; font-size: 12px; }
+    .top_menu li a:last-child { background-color: #2f1c11; width: 65px;}
+    .top_menu img { background-color: #2f1c11; padding-top: 10px;}
+    .login { border-right: 1px solid rgb(230, 230, 230);}
+    .gnb   {clear: both; width: 100%; border-bottom: 1px solid rgb(238, 238, 238);  background-color: white; height: 100px; overflow: hidden;}
+    .gnb:hover {overflow: visible;}
+    .bot_menu li a:hover {color: #CF661A;}
+    .submenu { width: 1280px; margin: 0 auto; background: white; opacity: 0.9; height: 600px; }
+    .submenu ul {width: 200px; float: left; margin-top: 30px;}
+    .submenu ul a {width: 200px; display: block; text-align: center; margin-top: 5px; color: black; font-size: 12px; font-weight: 550;}
+    .submenu ul a:hover {color: #CF661A;}
+    .submenu li { float: left; text-align: center; width: 200px; margin-bottom: 20px; font-weight: 550;}
+    .bot_menu {width: 1280px;height: 100px; margin: 0 auto;}
+    .bot_menu li a {float: left; color: black; font-weight: 550; font-size: 15px; display: block; width: 160px; height: 100px; line-height: 100px; text-align: center;}
+    .bot_menu li a:first-child { padding-top: 20px; }
+    .bot_menu li a:last-child { text-align: right; }
+
+    /* 푸터부분 */
+    .ft{background:rgb(226, 226, 226); height: 450px;}
+    .ft_top { width: 1280px; margin: 0 auto; border-bottom: 1px solid #333;height: 250px;}
+    .ft_top ul {width: 200px; float: left; margin-top: 30px;}
+    .ft_top ul a {width: 200px; display: block; text-align: center; margin-top: 5px; color: black; font-size: 12px;}
+    .ft_top li { float: left; text-align: center; width: 200px; margin-bottom: 20px; font-weight: 550;}
+    .ft_bot {clear: both; width: 1280px; margin: 0 auto;}
+    .ft_bot li {font-size: 14px;}
+    .ft_bot_menu {margin-top: 30px;}
+    .ft_bot_menu li {float: left; }
+    .ft_bot_menu li a { color: black; display: block; border-right: 1px solid #333; padding-left: 10px; padding-right: 10px; font-size: 14px; margin-bottom: 15px;}
+    .copyright { clear: both;}
+    .copyright li { float: left; font-size: 14px;}

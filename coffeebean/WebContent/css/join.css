@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.contents { clear: both; margin: 0 auto; width: 1280px; margin-top: 200px;}
+.c_tit { clear: both; color: #cf661a;}
+.join1_icon { width: 660px; height: 120px; margin: 0 auto;}
+.join1_icon li { float: left; width: 130px; height: 100px;}
+.join1_icon li img { width: 100px;}
+.join1_icon li p {  display: block; padding-top: 20px; font-size: 14px; font-weight: bold; }
+.member_wrap ul:last-child p { margin-left: 100px; }
+.bar { float: right; padding-top: 50px;}
+.join1_txt { text-align: center; margin-top: 70px; line-height: 30px; font-size: 18px; font-weight: 700;}
+.join1_txt span { color: #cf661a;}
+.join1_box { overflow-y: auto; height: 250px; padding: 10px 10px 10px 0; border: 1px solid #d8d8d8; background-color: #f1f3f4; }
+.join1_box p, .join1_box ol, .join1_box u, .join1_box dl { margin-left: 15px; line-height: 18px; }
+.join1_box {  padding: 20px;  padding-bottom: 10px; font-size: 12px; line-height: 16px; }
+.join1_box h2 { margin: 35px 0 20px 0; font-size: 14px; font-weight: bold; color: #2c75a8; text-align: center; }
+.join1_box h3 { margin: 25px 0 5px 10px; font-weight: bold; color: #787878; }
+.box_tit { margin-top: 70px; margin-bottom: 30px; }
+.join_check { margin-top: 20px;}
+.join_btn { text-align: center; margin-top: 70px; margin-bottom: 70px;}
+.btn_st { clear: both; display: block; width: 300px; height: 60px; background-color: #f38200; color: #ffffff; 
+border: 2px solid #cf661a; border-radius: 7px; font-size: 18px; font-weight: 600; line-height: 60px; margin: 0 auto;}
+#com { margin-left: 20px;}

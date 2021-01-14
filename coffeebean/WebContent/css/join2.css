@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.contents {clear: both; width: 1280px; margin: 0 auto;  height: 850px; margin-top: 200px;}
+.contents ul {margin: 0 auto; text-align: center; width: 660px;height: 100px; } 
+.contents li { float: left; text-align: center; height: 130px; width: 130px; }
+.contents li span { text-align: center; display: block;}
+.bar {float: right; width: 50px; height: 50px; padding-top: 40px;}
+.joinform { clear: both; padding-top: 100px; margin: 0 auto;}
+.txt_star::before {content: url(img/join_star.png); margin-right: 10px;}
+.joinform p {border-bottom: 1px solid #ddd; padding-bottom: 10px; width: 1000px; margin: 0 auto;}
+.joinform ip { background : rgb(238,238,238); border: 1px solid rgb(200,200,200); width: 300px; height: 30px; margin-top: 10px;}
+.input2 {display: inline-block; background-color: #666666; color: white; font-size: 14px; width: 130px; height: 30px; text-align: center; line-height: 30px;}
+#join_label { width: 150px; display: inline-block}
+.joinform #back { margin-left: 400px; margin-top: 50px; width: 200px; height: 40px; font-size: 14px; font-weight: 550;}
+.joinform #back:hover { background-color: rgb(200,200,200);}
+.joinform #next { width: 200px; height: 40px; background-color: #f38200; color: white; font-size: 14px; font-weight: 550;}
+.joinform #next:hover {background-color: #CF661A;}
