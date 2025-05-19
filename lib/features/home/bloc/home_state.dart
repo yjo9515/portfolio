@@ -8,11 +8,13 @@ class HomeState extends CommonState {
     super.hasReachedMax,
     super.page,
     super.query,
-    this.isLoading = true
+    this.isLoading = true,
+    this.projects = const []
   });
 
   final bool isLoading;
+  final List<Project> projects;
 
   @override
-  List<Object?> get props => [...super.props, isLoading];
+  List<Object?> get props => [...super.props, isLoading, projects];
 }
