@@ -5,7 +5,11 @@ import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../../core.dart';
+import '../../config/logger.dart';
+import '../../config/routes.dart';
+import '../../type/enum.dart';
+import '../../type/exception.dart';
+import '../model/exception_model.dart';
 
 mixin CommonRepository {
   final defaultHeader = {'Connection': 'Keep-Alive'};
@@ -52,14 +56,14 @@ mixin CommonRepository {
     return request;
   }
 
-  static Future<TokenData> _getTokenData() async {
-    var secureString = await AppConfig.to.storage.read(key: 'secureInfo');
-    if (secureString != null) {
-      return SecureModel.fromJson(jsonDecode(secureString)).tokenData;
-    } else {
-      return TokenData(authToken: "", refreshToken: "");
-    }
-  }
+  // static Future<TokenData> _getTokenData() async {
+  //   var secureString = await AppConfig.to.storage.read(key: 'secureInfo');
+  //   if (secureString != null) {
+  //     return SecureModel.fromJson(jsonDecode(secureString)).tokenData;
+  //   } else {
+  //     return TokenData(authToken: "", refreshToken: "");
+  //   }
+  // }
 
   Future<(StatusCode, dynamic)> get(String url, {Map<String, String>? header, TokenType token = TokenType.none, String? param, String? query, Map<String, dynamic>? body}) async {
     final request = http.Request('GET', _getUrl(url, param: param, query: query));
@@ -71,7 +75,7 @@ mixin CommonRepository {
       case TokenType.customToken:
         break;
       case TokenType.authToken:
-        request.headers.addAll({'Authorization': (await _getTokenData()).authToken});
+        request.headers.addAll({'Authorization': 'authToken'});
         break;
     }
     if (body != null) request.body = jsonEncode(body);
@@ -89,14 +93,14 @@ mixin CommonRepository {
       case TokenType.none:
         break;
       case TokenType.refreshToken:
-        request.headers.addAll({'Authorization': (await _getTokenData()).refreshToken});
-        request.body = jsonEncode({'token': (await _getTokenData()).authToken});
+        request.headers.addAll({'Authorization': 'authToken'});
+        request.body = jsonEncode({'token': 'authToken'});
         break;
       case TokenType.customToken:
         request.headers.addAll({'Authorization': '$customToken'});
         break;
       case TokenType.authToken:
-        request.headers.addAll({'Authorization': (await _getTokenData()).authToken});
+        request.headers.addAll({'Authorization': 'authToken'});
         break;
     }
     if (body != null) request.body = jsonEncode(body);
@@ -109,7 +113,7 @@ mixin CommonRepository {
   Future<(StatusCode, dynamic)> postWithImage(String url,
       {TokenType token = TokenType.none, String? param, String? query, Map<String, dynamic> body = const {}, List<int>? imageByte, List<XFile>? images}) async {
     final request = _jsonToRequestFormData(http.MultipartRequest('POST', _getUrl(url, param: param, query: query)), body);
-    if (token == TokenType.authToken) request.headers.addAll({'Authorization': (await _getTokenData()).authToken});
+    if (token == TokenType.authToken) request.headers.addAll({'Authorization': (await 'authToken')});
     if (imageByte != null && imageByte.isNotEmpty) request.files.add(http.MultipartFile.fromBytes('file', imageByte));
     if (images != null && images.isNotEmpty) {
       for (XFile image in images) {
@@ -128,7 +132,7 @@ mixin CommonRepository {
   Future<(StatusCode, dynamic)> patch(String url, {TokenType token = TokenType.none, String? param, String? query, String? customToken, Map<String, dynamic>? body, bool loginRequest = true}) async {
     var request = http.Request('PATCH', _getUrl(url, param: param, query: query));
     request.headers.addAll({'Content-Type': 'application/json'});
-    if (token == TokenType.authToken) request.headers.addAll({'Authorization': (await _getTokenData()).authToken});
+    if (token == TokenType.authToken) request.headers.addAll({'Authorization': 'authToken'});
     request.headers.addAll(defaultHeader);
     request.body = jsonEncode(body);
     return await request
@@ -141,7 +145,7 @@ mixin CommonRepository {
       {TokenType token = TokenType.none, String? param, String? query, Map<String, dynamic> body = const {}, List<int>? imageByte, List<http.MultipartFile>? images}) async {
     var request = http.MultipartRequest('PATCH', _getUrl(url, param: param, query: query));
     request.headers.addAll(defaultHeader);
-    if (token == TokenType.authToken) request.headers.addAll({'Authorization': (await _getTokenData()).authToken});
+    if (token == TokenType.authToken) request.headers.addAll({'Authorization': 'authToken'});
     if (imageByte != null && imageByte.isNotEmpty) request.files.add(http.MultipartFile.fromBytes('file', imageByte, filename: 'image.jpg', contentType: MediaType('file', 'brandImage')));
     if (images != null && images.isNotEmpty) request.files.addAll(images);
     request.headers.addAll({'Content-Type': 'multipart/form-data'});
@@ -154,7 +158,7 @@ mixin CommonRepository {
   Future<(StatusCode, dynamic)> delete(String url, {TokenType token = TokenType.none, String? param, String? query, Map<String, dynamic>? body}) async {
     final request = http.Request('DELETE', _getUrl(url, param: param, query: query));
     request.headers.addAll(defaultHeader);
-    if (token == TokenType.authToken) request.headers.addAll({'Authorization': (await _getTokenData()).authToken});
+    if (token == TokenType.authToken) request.headers.addAll({'Authorization': 'authToken'});
     if (body != null) request.body = jsonEncode(body);
     return await request
         .send()

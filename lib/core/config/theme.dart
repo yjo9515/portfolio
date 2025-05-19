@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:portfolio/core/config/style.dart';
 
-import '../core.dart';
 
 var lightTheme = ThemeData(
   extensions: const <ThemeExtension<dynamic>>[

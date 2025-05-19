@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'features/home/bloc/home_bloc.dart';
+import 'features/home/ui/home_page.dart';
+
 void main() => runApp(const PortfolioApp());
 
 class PortfolioApp extends StatelessWidget {
@@ -15,8 +18,8 @@ class PortfolioApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: BlocProvider(
-        create: (_) => ProjectBloc()..add(LoadProjectsEvent()),
-        child: const HomeScreen(),
+        create: (_) => HomeBloc()..add(HomeEvent()),
+        child: const HomePage(),
       ),
     );
   }

@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'generated/exception_model.g.dart';
+part 'exception_model.g.dart';
 
 @JsonSerializable()
 class ExceptionModel extends Equatable {

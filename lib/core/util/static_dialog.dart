@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icon_dialog/flutter_icon_dialog.dart';
 
-import '../core.dart';
+import '../config/style.dart';
+
 
 Widget adaptiveAction({required BuildContext context, required VoidCallback onPressed, required Widget child}) {
   final ThemeData theme = Theme.of(context);

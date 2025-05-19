@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icon_dialog/flutter_icon_dialog.dart';
 import 'package:intl/intl.dart';
 import 'package:permission_handler/permission_handler.dart';
-
-import '../core.dart';
+import 'package:portfolio/core/config/style.dart';
+import 'package:portfolio/core/util/static_dialog.dart';
 
 void onScroll({required ScrollController controller, Function()? onDone, bool edge = false}) {
   if (isMaximum(controller)) {
@@ -115,14 +115,6 @@ changeGenderToString(String? gender) {
   }
 }
 
-String changeNotificationToString(NotificationType type) {
-  switch (type) {
-    case NotificationType.notice:
-      return "TYPE_NOTICE";
-    case NotificationType.event:
-      return "TYPE_EVENT";
-  }
-}
 
 checkPermission(Permission permission, BuildContext context, String data) {
   permission.status.then((value) async {
